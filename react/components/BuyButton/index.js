@@ -4,10 +4,10 @@ import React, { Component, Fragment } from 'react'
 import { injectIntl, intlShape, FormattedMessage } from 'react-intl'
 import ContentLoader from 'react-content-loader'
 
-import {
-  contextPropTypes,
-  orderFormConsumer,
-} from 'vtex.store/OrderFormContext'
+// import {
+//   contextPropTypes,
+//   orderFormConsumer,
+// } from 'vtex.store/OrderFormContext'
 import { Button } from 'vtex.styleguide'
 
 const CONSTANTS = {
@@ -133,7 +133,7 @@ BuyButton.propTypes = {
     })
   ),
   /** Context used to call the add to cart mutation and retrieve the orderFormId **/
-  orderFormContext: contextPropTypes,
+  // orderFormContext: contextPropTypes,
   /** Component children that will be displayed inside of the button **/
   children: PropTypes.PropTypes.node.isRequired,
   /** Should redirect to checkout after adding to cart */
@@ -146,4 +146,4 @@ BuyButton.propTypes = {
   available: PropTypes.bool.isRequired,
 }
 
-export default orderFormConsumer(injectIntl(BuyButton))
+export default injectIntl(BuyButton)
