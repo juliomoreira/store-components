@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Fixed
-- App name in Configuration of `ProductBrand` docs.
+- App name in Configuration section of `ProductBrand` docs.
 
 ## [3.131.0] - 2020-10-13
 
